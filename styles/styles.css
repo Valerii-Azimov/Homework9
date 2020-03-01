@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: url(/Homework9/images/heder_imag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .wraper {
+    width: 280px;
+    margin: 0 auto;
+} */
+
+h1 {
+    display: none;
+}
+
+/* =========heder========= */
+.main_nav {
+    padding-top: 20px;
+}
+
+.main_nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.main_nav_menu_item:hover {
+    border: 2px solid white;
+    border-radius: 36px;
+}
+
+.main_nav_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.main_nav_menu_item {
+    box-sizing: border-box;
+    list-style: none;
+    width: 90px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_site {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 117px;
+    margin-bottom: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.share_your_holiday_dreams {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 39px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.find_partner {
+    font-family: "Roboto Light";
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button_find {
+    margin: 20px auto 138px;
+    width: 280px;
+    height: 40px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 78, 80);
+    cursor: pointer;
+    border-radius: 40px;
+    border-style: none;
+}
+
+.position_button {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===========main============= */
+.partner {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-top: 69px;
+}
+
+.partner_cart {
+    text-align: center;
+}
+
+.partner_cart_item {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 16px;
+    position: relative;
+    width: 198px;
+    height: 100%;
+}
+
+.partner_cart_name_1::before {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -60px;
+    display: block;
+    content: "";
+    width: 41px;
+    height: 41px;
+    background-image: url(/Homework9/images/Bradley_Hunter_icon.png);
+}
+
+.partner_cart_name_2::before {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -60px;
+    display: block;
+    content: "";
+    width: 41px;
+    height: 41px;
+    background-image: url(/Homework9/images/Lucas_Marsha_icon.png);
+}
+
+.partner_cart_name_3::before {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -60px;
+    display: block;
+    content: "";
+    width: 41px;
+    height: 41px;
+    background-image: url(/Homework9/images/Heather_Walker_icon.png);
+}
+
+.partner_cart_name_4::before {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -60px;
+    display: block;
+    content: "";
+    width: 41px;
+    height: 41px;
+    background-image: url(/Homework9/images/Bradley_Hunter1_icon.png);
+}
+
+.partner_cart_name {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-top: 16px;
+}
+
+.partner_cart_name_description {
+    font-family: "Roboto Light";
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    margin-top: 16px;
+}
+
+/* =========footer======== */
+.button_other_partners {
+    display: block;
+    margin: 29px auto 57px;
+    width: 280px;
+    height: 40px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 40px;
+    border-style: none;
+    border: 2px solid rgb(255, 78, 80);
+    border-radius: 36px;
+}
+
+/* ==========media=========== */
+@media screen and (min-width:768px) {
+    .wraper {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_nav {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 38px;
+        margin-right: 48px;
+    }
+
+    .name_site {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 49px;
+    }
+
+    .share_your_holiday_dreams {
+        margin-top: 153px;
+    }
+
+    .find_partner {
+        margin-top: 41px;
+    }
+
+    .partner_cart_item:not(:nth-child(2n)) {
+        margin-right: 24px;
+    }
+
+    .partner_cart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 463px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .wraper {
+        min-width: 942px;
+        margin: 0 auto;
+    }
+
+    .partner_cart_item:not(:last-child) {
+        margin-right: 36px;
+    }
+
+    .partner_cart {
+        width: 930px;
+        margin: 0 auto;
+    }
+}
